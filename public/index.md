@@ -9,7 +9,6 @@ Twelve-factor development environments:
 - Are compatible with developers' chosen operating systems, shells, and IDEs;
 - Declare all dependencies, for both development and production, including system tools;
 - Do not need to be actively maintained to eliminate configuration drift or prepare for further development;
-- Have a clean contract with the underlying operating system, offering maximum portability between execution environments;
 - Minimize divergence between development and production, enabling continuous deployment for maximum agility;
 
 The twelve-factor methodology can be applied to apps written in any programming language, and which use any combination of backing services (database, queue, memory cache, etc).
@@ -18,4 +17,5 @@ The twelve-factor methodology can be applied to apps written in any programming 
 
 ## Who should read this document?
 
-Any developer building applications which run as a service. Ops engineers who deploy or manage such applications.
+- Any developer building applications which run as a service;
+- Maintainers and contributors of open source software;

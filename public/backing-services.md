@@ -3,19 +3,17 @@ meta:
   title: IV. Backing services
   description: Treat backing services as attached resources
   previous: "config"
-  next: "build-release-run"
+  next: "continuous"
 headers:
   Cache-Control: no-cache
 ---
 
-A backing service is any service the app consumes over the network as part of its normal operation. Examples include datastores (such as MySQL or CouchDB), messaging/queueing systems (such as RabbitMQ or Beanstalkd), SMTP services for outbound email (such as Postfix), and caching systems (such as Memcached).
+Twelve-factor development environments include instructions to start any backing service the application needs to function. This includes databases (such as PostgreSQL, MongoDB, or Redis), queuing systems (such as RabbitMQ or Beanstalkd), and more.
 
-Backing services like the database are traditionally managed by the same systems administrators who deploy the app’s runtime. In addition to these locally-managed services, the app may also have services provided and managed by third parties. Examples include SMTP services (such as Postmark), metrics-gathering services (such as New Relic or Loggly), binary asset services (such as Amazon S3), and even API-accessible consumer services (such as Twitter, Google Maps, or Last.fm).
+These services do not need to run inside the development container, but there should be a one-to-one relationship between development environments and coupled services. Three development environments for the same developer on the same codebase should be attached to three independent sets of backing services.
 
-The code for a twelve-factor app makes no distinction between local and third party services. To the app, both are attached resources, accessed via a URL or other locator/credentials stored in the config. A deploy of the twelve-factor app should be able to swap out a local MySQL database with one managed by a third party (such as Amazon RDS) without any changes to the app’s code. Likewise, a local SMTP server could be swapped with a third-party SMTP service (such as Postmark) without code changes. In both cases, only the resource handle in the config needs to change.
+Some cloud services, such as PlanetScale, allow the creation of temporary databases for development. Cloudflare's CLI tool Wrangler will provision temporary Cloudflare Workers with development code. These are compatible with twelve-factor principles.
 
-Each distinct backing service is a resource. For example, a MySQL database is a resource; two MySQL databases (used for sharding at the application layer) qualify as two distinct resources. The twelve-factor app treats these databases as attached resources, which indicates their loose coupling to the deploy they are attached to.
+Developers should avoid using different backing services during development than production. For example, using SQLite in the development environment and PostgreSQL in production. Twelve-factor development environments are containerized and can often run versions of backing services that closely approximate production environments.
 
-A production deploy attached to four backing services.
-
-Resources can be attached to and detached from deploys at will. For example, if the app’s database is misbehaving due to a hardware issue, the app’s administrator might spin up a new database server restored from a recent backup. The current production database could be detached, and the new database attached – all without any code changes.
+All deploys of an application (development environment, staging environment, and production environments) should be using the same type and version of backing services.

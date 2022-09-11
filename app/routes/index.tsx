@@ -30,11 +30,11 @@ export default function LegalLayout() {
           <Link to="/">Twelve-Factor Development</Link>
         </div>
 
-        <div className="prose prose-violet mx-auto my-6 max-w-prose pb-12 text-gray-700">
+        <div className="prose prose-violet mx-auto my-6 max-w-prose px-4 pb-12 text-gray-700">
           <div dangerouslySetInnerHTML={{ __html }} />
         </div>
 
-        <div className="border-t-[1rem] border-gray-400 bg-gray-200 py-12">
+        <div className="border-t-[1rem] border-gray-400 bg-gray-200 py-12 px-4">
           <h2 className="text-bold text-center text-3xl">The Twelve Factors</h2>
 
           <nav className="mx-auto my-6 max-w-prose ">
@@ -98,28 +98,29 @@ export default function LegalLayout() {
               <li className="mb-4">
                 <p>
                   <a
-                    href="build-release-run"
+                    href="continuous"
                     className="text-xl font-bold decoration-dashed hover:text-violet-900 hover:underline"
                   >
-                    V. Build, release, run
+                    V. Continuous
                   </a>
                 </p>
                 <p className="text-lg text-gray-800">
-                  Strictly separate build and run stages
+                  Prebuild new workspaces during continuous integration
                 </p>
               </li>
 
               <li className="mb-4">
                 <p>
                   <a
-                    href="processes"
+                    href="uniformity"
                     className="text-xl font-bold decoration-dashed hover:text-violet-900 hover:underline"
                   >
-                    VI. Processes
+                    VI. Uniformity
                   </a>
                 </p>
                 <p className="text-lg text-gray-800">
-                  Execute the app as one or more stateless processes
+                  Normalize the developer experience between developers while
+                  allowing customization
                 </p>
               </li>
 
@@ -133,21 +134,21 @@ export default function LegalLayout() {
                   </a>
                 </p>
                 <p className="text-lg text-gray-800">
-                  Export services via port binding
+                  Bind service ports for public and private access
                 </p>
               </li>
 
               <li className="mb-4">
                 <p>
                   <a
-                    href="concurrency"
+                    href="parallel-development"
                     className="text-xl font-bold decoration-dashed hover:text-violet-900 hover:underline"
                   >
-                    VIII. Concurrency
+                    VIII. Parallel Development
                   </a>
                 </p>
                 <p className="text-lg text-gray-800">
-                  Scale out via the process model
+                  Run multiple workspaces in parallel
                 </p>
               </li>
 
@@ -161,7 +162,8 @@ export default function LegalLayout() {
                   </a>
                 </p>
                 <p className="text-lg text-gray-800">
-                  Maximize robustness with fast startup and graceful shutdown
+                  Minimize the cost of destroying and creating new development
+                  environments
                 </p>
               </li>
 
@@ -175,8 +177,7 @@ export default function LegalLayout() {
                   </a>
                 </p>
                 <p className="text-lg text-gray-800">
-                  Keep development, staging, and production as similar as
-                  possible
+                  Keep development and production as similar as possible
                 </p>
               </li>
 
@@ -190,21 +191,21 @@ export default function LegalLayout() {
                   </a>
                 </p>
                 <p className="text-lg text-gray-800">
-                  Treat logs as event streams
+                  Show logs for environment processes
                 </p>
               </li>
 
               <li className="mb-4">
                 <p>
                   <a
-                    href="admin-processes"
+                    href="unknown"
                     className="text-xl font-bold decoration-dashed hover:text-violet-900 hover:underline"
                   >
-                    XII. Admin processes
+                    XII. Unknown
                   </a>
                 </p>
                 <p className="text-lg text-gray-800">
-                  Run admin/management tasks as one-off processes
+                  Placeholder twelfth principle
                 </p>
               </li>
             </ul>

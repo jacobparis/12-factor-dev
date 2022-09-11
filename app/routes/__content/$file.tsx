@@ -9,14 +9,14 @@ const allowedFiles = [
   "dependencies",
   "config",
   "backing-services",
-  "build-release-run",
-  "processes",
+  "continuous",
+  "uniformity",
   "port-binding",
-  "concurrency",
+  "parallel-development",
   "disposability",
   "dev-prod-parity",
   "logs",
-  "admin-processes",
+  "unknown",
 ]
 
 const titles = {
@@ -24,14 +24,14 @@ const titles = {
   dependencies: "II. Dependencies",
   config: "III. Config",
   "backing-services": "IV. Backing Services",
-  "build-release-run": "V. Build, Release, Run",
-  processes: "VI. Processes",
+  continuous: "V. Build, Release, Run",
+  uniformity: "VI. Uniformity",
   "port-binding": "VII. Port Binding",
-  concurrency: "VIII. Concurrency",
+  "parallel-development": "VIII. Parallel Development",
   disposability: "IX. Disposability",
   "dev-prod-parity": "X. Dev/prod Parity",
   logs: "XI. Logs",
-  "admin-processes": "XII. Admin Processes",
+  unknown: "XII. Admin Processes",
   default: null,
 }
 export const meta: MetaFunction = ({ params }) => {
@@ -53,14 +53,14 @@ export const loader: LoaderFunction = async ({ params }) => {
     dependencies: import("../../../public/dependencies.md"),
     config: import("../../../public/config.md"),
     "backing-services": import("../../../public/backing-services.md"),
-    "build-release-run": import("../../../public/build-release-run.md"),
-    processes: import("../../../public/processes.md"),
+    continuous: import("../../../public/continuous.md"),
+    uniformity: import("../../../public/uniformity.md"),
     "port-binding": import("../../../public/port-binding.md"),
-    concurrency: import("../../../public/concurrency.md"),
+    "parallel-development": import("../../../public/parallel-development.md"),
     disposability: import("../../../public/disposability.md"),
     "dev-prod-parity": import("../../../public/dev-prod-parity.md"),
     logs: import("../../../public/logs.md"),
-    "admin-processes": import("../../../public/admin-processes.md"),
+    unknown: import("../../../public/unknown.md"),
   }
 
   const file = await files[params.file]
@@ -78,8 +78,8 @@ export default function PostSlug() {
   const { title, description, previous, next, __html } = useLoaderData()
   const location = useLocation()
   return (
-    <div>
-      <div className="mx-auto my-6 max-w-prose pb-12 text-gray-700">
+    <div className="flex flex-grow flex-col">
+      <div className="mx-auto my-6 max-w-prose flex-grow px-4 pb-12 text-gray-700">
         <h1 className="mb-2 text-4xl font-bold">{title} </h1>
         <h2 className="mb-4 text-2xl text-gray-500"> {description} </h2>
         <div
@@ -88,7 +88,7 @@ export default function PostSlug() {
         />
       </div>
       <footer className="border-t-[1rem] border-gray-400 bg-gray-200">
-        <div className="mx-auto mb-4 flex max-w-prose justify-between py-4">
+        <div className="mx-auto mb-4 flex max-w-prose justify-between py-4 px-4">
           {previous ? (
             <a
               href={previous}
@@ -107,7 +107,7 @@ export default function PostSlug() {
           ) : null}
         </div>
 
-        <div className="mx-auto max-w-prose pb-12 text-gray-700">
+        <div className="mx-auto max-w-prose px-4 pb-12 text-gray-700">
           <Link
             reloadDocument
             to={`${location.pathname}.md`}
