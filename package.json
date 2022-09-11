@@ -1,7 +1,7 @@
 {
-  "name": "minimal-remix-stack",
+  "name": "12-factor-dev",
   "private": true,
-  "description": "The Minimal House Remix Stack to setup Remix with minimal typsescript, tailwind, linting, and formatting. Worry about storage, testing, or deployment later.",
+  "description": "A content site for 12 Factor Development",
   "license": "MIT",
   "sideEffects": false,
   "scripts": {

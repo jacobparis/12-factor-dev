@@ -1,0 +1,30 @@
+.prose h1 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.prose h2 {
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.prose h1::first-letter,
+.prose h2::first-letter {
+  font-size: 1.5em;
+}
+
+.prose p {
+  margin-bottom: 1em;
+}
+
+.prose ul {
+  list-style-type: disc;
+  margin-left: 1em;
+}
+
+.prose li {
+  margin-bottom: 0.5em;
+}
