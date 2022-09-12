@@ -8,7 +8,7 @@ headers:
   Cache-Control: no-cache
 ---
 
-Twelve-factor development is encapsulated in an isolated environment, such as a container or virtual machine, with every dependency explicitly included in a manifest.
+Continuous development is encapsulated in an isolated environment, such as a container or virtual machine, with every dependency explicitly included in a manifest.
 
 Explicit dependency declaration ensures that each developer will have the necessary packages and system tools installed in their development environment.
 

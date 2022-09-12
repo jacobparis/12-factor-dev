@@ -28,3 +28,12 @@
 .prose li {
   margin-bottom: 0.5em;
 }
+
+.prose a {
+  color: #7c2d12;
+  text-decoration: underline;
+}
+
+.prose a:hover {
+  color: black;
+}

@@ -36,7 +36,7 @@ const titles = {
 }
 export const meta: MetaFunction = ({ params }) => {
   return {
-    title: [titles[params.file || "default"], "Twelve-Factor Development"].join(
+    title: [titles[params.file || "default"], "Continuous Development"].join(
       " – "
     ),
   }
@@ -78,21 +78,24 @@ export default function PostSlug() {
   const { title, description, previous, next, __html } = useLoaderData()
   const location = useLocation()
   return (
-    <div className="flex flex-grow flex-col">
+    <div className="flex flex-grow flex-col border-t-[1rem] border-orange-400 bg-orange-100 py-12 px-4">
       <div className="mx-auto my-6 max-w-prose flex-grow px-4 pb-12 text-gray-700">
-        <h1 className="mb-2 text-4xl font-bold">{title} </h1>
-        <h2 className="mb-4 text-2xl text-gray-500"> {description} </h2>
+        <h1 className="mb-2 text-5xl font-bold text-orange-900">{title} </h1>
+        <h2 className="mb-4 text-2xl text-orange-900 opacity-80">
+          {" "}
+          {description}{" "}
+        </h2>
         <div
-          className="prose prose-violet "
+          className="prose prose-orange "
           dangerouslySetInnerHTML={{ __html }}
         />
       </div>
-      <footer className="border-t-[1rem] border-gray-400 bg-gray-200">
+      <footer className="">
         <div className="mx-auto mb-4 flex max-w-prose justify-between py-4 px-4">
           {previous ? (
             <a
               href={previous}
-              className="text-2xl font-bold decoration-dashed hover:text-violet-900 hover:underline"
+              className="text-2xl font-bold decoration-dashed hover:text-orange-900 hover:underline"
             >
               Previous
             </a>
@@ -100,7 +103,7 @@ export default function PostSlug() {
           {next ? (
             <a
               href={next}
-              className="text-2xl font-bold decoration-dashed hover:text-violet-900 hover:underline"
+              className="text-2xl font-bold decoration-dashed hover:text-orange-900 hover:underline"
             >
               Next
             </a>
@@ -111,7 +114,7 @@ export default function PostSlug() {
           <Link
             reloadDocument
             to={`${location.pathname}.md`}
-            className="decoration-dashed hover:text-violet-900 hover:underline"
+            className="decoration-dashed hover:text-orange-900 hover:underline"
           >
             View printable version
           </Link>

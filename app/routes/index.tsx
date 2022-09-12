@@ -9,7 +9,7 @@ export function links() {
 
 export const meta: MetaFunction = () => {
   return {
-    title: "Twelve-Factor Development",
+    title: "Continuous Development",
   }
 }
 
@@ -26,16 +26,18 @@ export default function LegalLayout() {
   return (
     <>
       <article>
-        <div className="bg-gray-900 py-12 text-center text-5xl text-gray-100">
-          <Link to="/">Twelve-Factor Development</Link>
+        <div className="py-12 text-center text-6xl font-bold text-orange-900">
+          <Link to="/">Continuous Development</Link>
         </div>
 
-        <div className="prose prose-violet mx-auto my-6 max-w-prose px-4 pb-12 text-gray-700">
+        <div className="prose prose-orange mx-auto my-6 max-w-prose px-4 pb-12 text-gray-700">
           <div dangerouslySetInnerHTML={{ __html }} />
         </div>
 
-        <div className="border-t-[1rem] border-gray-400 bg-gray-200 py-12 px-4">
-          <h2 className="text-bold text-center text-3xl">The Twelve Factors</h2>
+        <div className="border-t-[1rem] border-orange-400 bg-orange-100 py-12 px-4">
+          <h2 className="mb-12 text-center text-5xl font-bold text-orange-900 ">
+            The Twelve Factors
+          </h2>
 
           <nav className="mx-auto my-6 max-w-prose ">
             <ul>
@@ -43,7 +45,7 @@ export default function LegalLayout() {
                 <p>
                   <a
                     href="codebase"
-                    className="text-xl font-bold decoration-dashed hover:text-violet-900 hover:underline"
+                    className="text-xl font-bold decoration-dashed hover:text-orange-900 hover:underline"
                   >
                     I. Codebase
                   </a>
@@ -57,7 +59,7 @@ export default function LegalLayout() {
                 <p>
                   <a
                     href="dependencies"
-                    className="text-xl font-bold decoration-dashed hover:text-violet-900 hover:underline"
+                    className="text-xl font-bold decoration-dashed hover:text-orange-900 hover:underline"
                   >
                     II. Dependencies
                   </a>
@@ -71,7 +73,7 @@ export default function LegalLayout() {
                 <p>
                   <a
                     href="config"
-                    className="text-xl font-bold decoration-dashed hover:text-violet-900 hover:underline"
+                    className="text-xl font-bold decoration-dashed hover:text-orange-900 hover:underline"
                   >
                     III. Config
                   </a>
@@ -85,7 +87,7 @@ export default function LegalLayout() {
                 <p>
                   <a
                     href="backing-services"
-                    className="text-xl font-bold decoration-dashed hover:text-violet-900 hover:underline"
+                    className="text-xl font-bold decoration-dashed hover:text-orange-900 hover:underline"
                   >
                     IV. Backing services
                   </a>
@@ -99,7 +101,7 @@ export default function LegalLayout() {
                 <p>
                   <a
                     href="continuous"
-                    className="text-xl font-bold decoration-dashed hover:text-violet-900 hover:underline"
+                    className="text-xl font-bold decoration-dashed hover:text-orange-900 hover:underline"
                   >
                     V. Continuous
                   </a>
@@ -113,7 +115,7 @@ export default function LegalLayout() {
                 <p>
                   <a
                     href="uniformity"
-                    className="text-xl font-bold decoration-dashed hover:text-violet-900 hover:underline"
+                    className="text-xl font-bold decoration-dashed hover:text-orange-900 hover:underline"
                   >
                     VI. Uniformity
                   </a>
@@ -128,7 +130,7 @@ export default function LegalLayout() {
                 <p>
                   <a
                     href="port-binding"
-                    className="text-xl font-bold decoration-dashed hover:text-violet-900 hover:underline"
+                    className="text-xl font-bold decoration-dashed hover:text-orange-900 hover:underline"
                   >
                     VII. Port binding
                   </a>
@@ -142,7 +144,7 @@ export default function LegalLayout() {
                 <p>
                   <a
                     href="parallel-development"
-                    className="text-xl font-bold decoration-dashed hover:text-violet-900 hover:underline"
+                    className="text-xl font-bold decoration-dashed hover:text-orange-900 hover:underline"
                   >
                     VIII. Parallel Development
                   </a>
@@ -156,7 +158,7 @@ export default function LegalLayout() {
                 <p>
                   <a
                     href="disposability"
-                    className="text-xl font-bold decoration-dashed hover:text-violet-900 hover:underline"
+                    className="text-xl font-bold decoration-dashed hover:text-orange-900 hover:underline"
                   >
                     IX. Disposability
                   </a>
@@ -171,7 +173,7 @@ export default function LegalLayout() {
                 <p>
                   <a
                     href="dev-prod-parity"
-                    className="text-xl font-bold decoration-dashed hover:text-violet-900 hover:underline"
+                    className="text-xl font-bold decoration-dashed hover:text-orange-900 hover:underline"
                   >
                     X. Dev/prod parity
                   </a>
@@ -185,7 +187,7 @@ export default function LegalLayout() {
                 <p>
                   <a
                     href="logs"
-                    className="text-xl font-bold decoration-dashed hover:text-violet-900 hover:underline"
+                    className="text-xl font-bold decoration-dashed hover:text-orange-900 hover:underline"
                   >
                     XI. Logs
                   </a>
@@ -199,7 +201,7 @@ export default function LegalLayout() {
                 <p>
                   <a
                     href="unknown"
-                    className="text-xl font-bold decoration-dashed hover:text-violet-900 hover:underline"
+                    className="text-xl font-bold decoration-dashed hover:text-orange-900 hover:underline"
                   >
                     XII. Unknown
                   </a>
@@ -215,7 +217,7 @@ export default function LegalLayout() {
             <Link
               reloadDocument
               to="/index.md"
-              className="decoration-dashed hover:text-violet-900 hover:underline"
+              className="decoration-dashed hover:text-orange-900 hover:underline"
             >
               View printable version
             </Link>

@@ -8,7 +8,7 @@ headers:
   Cache-Control: no-cache
 ---
 
-Developers need visibility into the behavior of their development environment. Twelve-factor development environments show log information for:
+Developers need visibility into the behavior of their development environment. Continuous development environments show log information for:
 
 - Tasks run while prebuilding development environments;
 - Automated setup scripts that run when a workspace is opened
