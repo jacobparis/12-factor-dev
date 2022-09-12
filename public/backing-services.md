@@ -1,9 +1,9 @@
 ---
 meta:
-  title: IV. Backing services
-  description: Treat backing services as attached resources
-  previous: "config"
-  next: "continuous"
+  title: VIII. Backing services
+  description: Provision backing services within the workspace
+  previous: "dependencies"
+  next: "logs"
 headers:
   Cache-Control: no-cache
 ---

@@ -1,9 +1,9 @@
 ---
 meta:
-  title: VIII. Parallel development
+  title: II. Parallel development
   description: Run multiple workspaces in parallel
-  previous: "port-binding"
-  next: "disposability"
+  previous: "dev-prod-parity"
+  next: "uniformity"
 headers:
   Cache-Control: no-cache
 ---

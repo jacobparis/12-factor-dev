@@ -1,9 +1,9 @@
 ---
 meta:
-  title: I. Codebase
-  description: One codebase tracked in revision control, many deploys
-  previous: "/"
-  next: "dependencies"
+  title: V. Codebase
+  description: Make changes to one repository at a time
+  previous: "continuous"
+  next: "disposability"
 headers:
   Cache-Control: no-cache
 ---

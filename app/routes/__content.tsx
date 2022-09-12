@@ -9,7 +9,7 @@ export default function LegalLayout() {
     <>
       <article className="flex min-h-screen flex-col">
         <div className="py-12 text-center text-6xl font-bold text-orange-900">
-          <Link to="/">Twelve Factor Development</Link>
+          <Link to="/">Continuous Development</Link>
         </div>
 
         <Outlet />

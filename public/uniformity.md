@@ -1,9 +1,9 @@
 ---
 meta:
-  title: VI. Uniformity
+  title: III. Uniformity
   description: Normalize the developer experience between developers while allowing customization
-  previous: "continuous"
-  next: "port-binding"
+  previous: "parallel-workspaces"
+  next: "continuous"
 headers:
   Cache-Control: no-cache
 ---

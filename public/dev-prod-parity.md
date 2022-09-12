@@ -1,9 +1,9 @@
 ---
 meta:
-  title: X. Dev/prod parity
+  title: I. Dev/prod parity
   description: Keep development and production as similar as possible
-  previous: "disposability"
-  next: "logs"
+  previous: "/"
+  next: "parallel-development"
 headers:
   Cache-Control: no-cache
 ---
@@ -17,3 +17,7 @@ The continuous development environment is identical to the production environmen
 - and development versions of [backing services](backing-services)
 
 Developers should prefer shorter cycle times between development and deployment, integrating their contributions into the codebase as frequently as possible. Workflows such as Test Driven Development encourage this. The longer a development branch lives, the more it diverges from the expectations of the production environment.
+
+Continuous development forbids the use of heuristics to determine an application's environment.
+
+For example, a developer should not assume they are in a development environment because a hostname is `localhost`, nor should they assume they are in a production environment because the hostname is not `localhost`.

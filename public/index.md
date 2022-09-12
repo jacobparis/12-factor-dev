@@ -1,6 +1,6 @@
 # Introduction
 
-The [Continuous App](https://12factor.net/) is a methodology for building resilient, robust, and scalable production applications. Continuous development is an adaptation of that methodology for the development process.
+Continuous development is a workflow methodology for building software applications.
 
 Continuous development environments:
 
@@ -11,9 +11,13 @@ Continuous development environments:
 - Do not need to be actively maintained to eliminate configuration drift or prepare for further development;
 - Minimize divergence between development and production, enabling continuous deployment for maximum agility;
 
-The continuous methodology can be applied to apps written in any programming language, and which use any combination of backing services (database, queue, memory cache, etc).
+The continuous development methodology can be applied to apps written in any programming language, and which use any combination of backing services (database, queue, memory cache, etc).
 
 ## Background
+
+This document is the compilation of decades of lessons learned from developers working at and running companies of all-sizes, from solo ventures, startups, and meganational corporations.
+
+Sources of inspiration include [The Twelve-Factor App](https://12factor.net/) and the [Agile Manifesto](https://agilemanifesto.org/)
 
 ## Who should read this document?
 

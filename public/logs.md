@@ -1,9 +1,8 @@
 ---
 meta:
-  title: XI. Logs
-  description: Show logs for environment processes
-  previous: "dev-prod-parity"
-  next: "unknown"
+  title: IX. Logs
+  description: Give developers visibility into the environment
+  previous: "backing-services"
 headers:
   Cache-Control: no-cache
 ---

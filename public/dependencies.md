@@ -1,9 +1,9 @@
 ---
 meta:
-  title: II. Dependencies
+  title: VII. Dependencies
   description: Explicitly declare and isolate dependencies
-  previous: "codebase"
-  next: "config"
+  previous: "disposability"
+  next: "backing-services"
 headers:
   Cache-Control: no-cache
 ---

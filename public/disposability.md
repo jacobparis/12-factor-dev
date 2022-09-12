@@ -1,9 +1,9 @@
 ---
 meta:
-  title: IX. Disposability
+  title: VI. Disposability
   description: Minimize the cost of destroying and creating new development environments
-  previous: "parallel-development"
-  next: "dev-prod-parity"
+  previous: "codebase"
+  next: "dependencies"
 headers:
   Cache-Control: no-cache
 ---

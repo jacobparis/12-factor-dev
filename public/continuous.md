@@ -1,9 +1,9 @@
 ---
 meta:
-  title: V. Continuous
+  title: IV. Continuous
   description: Prebuild new workspaces during continuous integration
-  previous: "backing-services"
-  next: "uniformity"
+  previous: "uniformity"
+  next: "codebase"
 headers:
   Cache-Control: no-cache
 ---

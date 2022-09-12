@@ -20,17 +20,17 @@ const allowedFiles = [
 ]
 
 const titles = {
-  codebase: "I. Codebase",
-  dependencies: "II. Dependencies",
+  codebase: "V. Codebase",
+  dependencies: "VII. Dependencies",
   config: "III. Config",
   "backing-services": "IV. Backing Services",
   continuous: "V. Build, Release, Run",
   uniformity: "VI. Uniformity",
   "port-binding": "VII. Port Binding",
-  "parallel-development": "VIII. Parallel Development",
-  disposability: "IX. Disposability",
+  "parallel-development": "II. Parallel Development",
+  disposability: "VI. Disposability",
   "dev-prod-parity": "X. Dev/prod Parity",
-  logs: "XI. Logs",
+  logs: "IX. Logs",
   unknown: "XII. Admin Processes",
   default: null,
 }

@@ -7,7 +7,3 @@ meta:
 headers:
   Cache-Control: no-cache
 ---
-
-Continuous development environments allow binding ports within the container to external interfaces, such as ports on `localhost` or URLs on the hosted development server.
-
-The environment does not assume the developer has access to `localhost`.
