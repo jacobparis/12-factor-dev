@@ -1,17 +1,18 @@
 # Introduction
 
-Continuous development is a workflow methodology for building software applications.
+Continuous development is a methodology for building software applications with development environments that are **isolated**, **automated**, **adaptable**, and **transparent**.
 
-Continuous development environments:
+> A development environment (also called a workspace) includes the developer's code editor or IDE, the running application code, and the machine the application code runs on.
 
-- Use declarative formats for setup automation, to minimize time and cost for new developers joining the project;
-- Do not require manual work to get to a ready-to-code state;
-- Are compatible with developers' chosen operating systems, shells, and IDEs;
-- Declare all dependencies, for both development and production, including system tools;
-- Do not need to be actively maintained to eliminate configuration drift or prepare for further development;
-- Minimize divergence between development and production, enabling continuous deployment for maximum agility;
+Developing software in environments that do not have these properties means accepting the impediments caused by them.
 
-The continuous development methodology can be applied to apps written in any programming language, and which use any combination of backing services (database, queue, memory cache, etc).
+- Poor isolation leads to unpredictable side-effects and compatibility issues. - Poor automation leads to complex internal states that are not easily reversible.
+- Inflexible environments do not provide developers with the agency to use the tools they need.
+- Black-boxes obscure the necessary information required to debug issues.
+
+The goal of continuous development is to **improve the developer experience by removing sources of friction and frustration.**
+
+Continuous principles can be applied to all development operations, regardless of software, hardware, or team size.
 
 ## Background
 
@@ -21,5 +22,6 @@ Sources of inspiration include [The Twelve-Factor App](https://12factor.net/) an
 
 ## Who should read this document?
 
-- Any developer building applications which run as a service;
+- Any developer building applications;
 - Maintainers and contributors of open source software;
+- Leaders of engineering teams seeking to improve their developer experience;

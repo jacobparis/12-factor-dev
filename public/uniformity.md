@@ -1,15 +1,13 @@
 ---
-meta:
-  title: III. Uniformity
-  description: Normalize the developer experience between developers while allowing customization
-  previous: "parallel-workspaces"
-  next: "continuous"
 headers:
   Cache-Control: no-cache
 ---
 
-In a codebase with multiple contributors, the hardware, operating systems, terminal shells, IDEs, and dependency versions will all differ between developers. One of the goals of continuous development is to normalize the environment so the developer experience is set upon identical foundations for each developer.
+In a codebase with multiple contributors, the hardware, operating systems, terminal shells, IDEs, and dependency versions will all differ between developers. Continuous development environments are **isolated** from the developer's machine and **adapt** to the developer's customizations.
 
-Developers who use MacOS, Linux, or Windows operating systems should see identical results when running any application code. As continuous development environments are containerized, the operating system of the developer should not affect it.
+Developers are empowered to use their own preferences for code editor, extensions, themes, keybindings, shell configuration, operating system, and development machine. Cases where development is only possible with specific setups, such as mobile app development, are valid exceptions.
 
-Continuous development does not dictate the tools that developer should use. Developers are entitled to their own preferences for code editor, extensions, themes, keybindings, shell configuration, and other preferences. A development environment that requires a specific IDE violates the uniformity principle, as does any requirement for a particular operating system or hardware.
+## Examples
+
+- Developers see identical results when running application code, regardless of whether they use MacOS, Linux, or Windows operating systems
+- Applications do not behave differently based on developer hardware, such as Intel processors vs Apple Silicon (M1/M2) processors
