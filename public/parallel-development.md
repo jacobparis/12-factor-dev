@@ -5,7 +5,7 @@ headers:
 
 Developers are able to run multiple development environments for the same codebase concurrently without conflict.
 
-As the [backing services](backing-services) in a continuous development environment are **isolated**, each workspace will have its own copy of the codebase and any attached resources.
+As the [backing services](backing-services) in a Continuous Development Environment are **isolated**, each workspace will have its own copy of the codebase and any attached resources.
 
 ## Examples
 

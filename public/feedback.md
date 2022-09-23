@@ -3,7 +3,7 @@ headers:
   Cache-Control: no-cache
 ---
 
-Developers need visibility into the behavior of their development environment. Systems that operate as black-boxes are challenging to debug and to understand. Continuous development environments are **transparent** and show log information for all **automations** involved in setting up the workspace.
+Developers need visibility into the behavior of their development environment. Systems that operate as black-boxes are challenging to debug and to understand. Continuous Development Environments are **transparent** and show log information for all **automations** involved in setting up the workspace.
 
 ## Examples
 

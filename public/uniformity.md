@@ -3,7 +3,7 @@ headers:
   Cache-Control: no-cache
 ---
 
-In a codebase with multiple contributors, the hardware, operating systems, terminal shells, IDEs, and dependency versions will all differ between developers. Continuous development environments are **isolated** from the developer's machine and **adapt** to the developer's customizations.
+In a codebase with multiple contributors, the hardware, operating systems, terminal shells, IDEs, and dependency versions will all differ between developers. Continuous Development Environments are **isolated** from the developer's machine and **adapt** to the developer's customizations.
 
 Developers are empowered to use their own preferences for code editor, extensions, themes, keybindings, shell configuration, operating system, and development machine. Cases where development is only possible with specific setups, such as mobile app development, are valid exceptions.
 

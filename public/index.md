@@ -10,7 +10,7 @@ Developing software in environments that do not have these properties means acce
 - Inflexible environments do not provide developers with the agency to use the tools they need.
 - Black-boxes obscure the necessary information required to debug issues.
 
-The goal of continuous development is to **improve the developer experience by removing sources of friction and frustration.**
+Continuous Development Environments (CDEs) **improve the developer experience by removing sources of friction and frustration.**
 
 Continuous principles can be applied to all development operations, regardless of software, hardware, or team size.
 

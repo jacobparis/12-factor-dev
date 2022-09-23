@@ -5,7 +5,7 @@ headers:
 
 Dev/prod parity minimizes the gap between development and production environments. The closer the development environment resembles production, the more confidence a developer will have that their changes are going to behave in the same way once deployed.
 
-The continuous development environment is identical to the production environment with few exceptions:
+The Continuous Development Environment is identical to the production environment with few exceptions:
 
 - the addition of developer tools, such as CLIs, SSH servers, and IDE backends;
 - newer codebases, containing Work-In-Progress code that is not deployed to production;
