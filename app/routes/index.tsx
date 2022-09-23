@@ -42,7 +42,7 @@ export default function LegalLayout() {
             <li className="mb-2">Continuous Development is like "Agile".</li>
             <li className="mb-2">
               Continuous Remote Development (CRD) is like "Extreme Programming".
-              It's a specific flavour of continuous development (in the same way
+              It's a specific flavour of Continuous Development (in the same way
               that XP is a specific flavour of Agile) and describes the Gitpod
               workflow.
             </li>
@@ -53,7 +53,8 @@ export default function LegalLayout() {
               >
                 run-gp
               </a>{" "}
-              is an implementation of continuous development that is not remote.
+              is an implementation of Continuous Development that is not remote,
+              and therefore less <strong>isolated</strong>
             </li>
             <li className="mb-2">
               Similar workflows, such as those created in-house by Shopify and
